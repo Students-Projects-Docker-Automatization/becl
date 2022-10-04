@@ -1,4 +1,4 @@
-FROM nginx:1.17.1-alpine
-COPY nginx.conf /etc/nginx/nginx.conf
+FROM nginx:latest
 COPY /becl /usr/share/nginx/html
+COPY /nginx.conf  /etc/nginx/conf.d/default.conf
 EXPOSE 80
